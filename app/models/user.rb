@@ -2,6 +2,10 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
 
+  has_many :authored_surveys, class_name: 'Survey'
+  # has_many :surveys, :through => :user_surveys
+
+
  # users.password_hash in the database is a :string
   include BCrypt
 
@@ -13,8 +17,5 @@ class User < ActiveRecord::Base
     @password = Password.create(new_password)
     self.password_hash = @password
   end
-
-  has_many :user_surveys
-  has_many :surveys, :through => :user_surveys
 
 end
