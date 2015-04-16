@@ -1,0 +1,15 @@
+<h3> Survey </h3>
+
+
+<% @survey.each do |survey| %>
+  <div>
+    <a href="#"><%= survey.title %></a>
+  </div>
+<% end %>
+
+
+
+<form action="/survey" method="post">
+  <input type="text" name="title" placeholder="title" ></input>
+  <input type= "submit" value= "Submit"</input>
+</form>
