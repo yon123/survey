@@ -3,5 +3,5 @@ class Answer < ActiveRecord::Base
   belongs_to :question
   has_one :survey, through: :question
 
-  validates :question_id, presence: true
+  # validates :question_id, presence: true
 end

@@ -1,0 +1,12 @@
+<h3>QUESTIONS</h3>
+
+
+<div>
+  <% @questions.each do |question| %>
+    <%= question.description %>
+    <% question.answers.each do |answer| %>
+      <%= answer.description %>
+    <% end %>
+  <% end %>
+</div>
+
