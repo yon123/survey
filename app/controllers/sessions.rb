@@ -8,3 +8,9 @@
 #     redirect '/'
 #   end
 # end
+
+
+# def logout
+#   session[:id] = nil
+#   redirect '/'
+# end

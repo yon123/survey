@@ -1,4 +1,4 @@
-get '/' do
+get '/users/:user_id' do
   @survey = Survey.all
   erb :"survey/index"
 end
@@ -9,7 +9,7 @@ post '/survey' do
     title: params[:title]
     )
   new_survey.save
-  redirect '/'
+  redirect "/users/#{current_user.id}"
 end
 
 
