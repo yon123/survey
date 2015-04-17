@@ -1,5 +1,4 @@
 get '/' do
-  @user = User.all
   erb :"user/index"
 end
 
