@@ -6,7 +6,7 @@
 #     session[:id] = @user.id
 #   else
 #     redirect '/'
-#   end
+#   en
 # end
 
 
