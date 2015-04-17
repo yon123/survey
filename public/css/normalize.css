@@ -31,7 +31,8 @@ html {
 body {
   margin: 0;
 
-background-image: url(http://upload.wikimedia.org/wikipedia/commons/0/02/Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004.JPG)
+background-image: url(http://i.ytimg.com/vi/stKb6Al2mzM/maxresdefault.jpg)
+
 }
 
 /* HTML5 display definitions
@@ -430,6 +431,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 
 td,
 th {
