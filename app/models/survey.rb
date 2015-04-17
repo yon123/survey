@@ -6,5 +6,5 @@ class Survey < ActiveRecord::Base
   # has_many :users, :through => :user_surveys
   # has_many :questions
 
-  validates :user_id, presence: true
+  # validates :user_id, presence: true
 end

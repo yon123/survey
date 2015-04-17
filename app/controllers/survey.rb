@@ -12,6 +12,13 @@ post '/survey' do
   redirect '/'
 end
 
+# GET A SURVEY
+get "/survey/:id" do
+  @survey = Survey.where(id: params[:id]).first
+  @questions = @survey.questions
+  erb :"survey/questions"
+end
+
 
 
 
